@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>List Donatur</title>
+</head>
+<body>
+
+	<h1>Ini List Donatur</h1>
+	<table>
+		<tr th:each = "dtr: ${dtrlist}">
+			<td th:text = "${dtr.id}"></td>
+			<td th:text = "${dtr.nama}"></td>
+		</tr>
+	</table>
+</body>
+</html>

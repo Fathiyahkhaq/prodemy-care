@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Page Index dan edit</title>
+</head>
+<body>
+	<h1>Ini Index</h1>
+	
+	<form action="#" th:action="@{/donasi}" th:object="@{tambah}" method="post">
+	<input type="hidden" name="mode" th:field="*{tambah}">
+	
+	Nama <input type="text" name="nama" value=""><br>
+	Email <input type="text" name="email" value=""><br>
+	Phone <input type="text" name="phone" value=""><br>
+	Total Donasi<input type="text" name="total" value=""><br>
+	Anonim <input type="number" name="anonim" value=""><br>
+	<button type="submit">Simpan</button>
+	</form>
+	
+	
+		<table>
+			<tr th:each = "dtr: ${dtrlist}">
+				<td th:text = "${dtr.id}"></td>
+				<td th:text = "${dtr.nama}"></td>
+				<td th:text = "${dtr.email}"></td>
+				<td th:text = "${dtr.phone}"></td>
+				<td th:text = "${dtr.total}"></td>
+				<td th:text = "${dtr.anonim}"></td>
+			</tr>
+		</table>
+	<ul>
+		<li>${dtr.id} - ${dtr.nama} - <a href="${contextName}/mhs/edit?id=${dtr.id}">Edit</a></li>
+	</ul>
+
+	
+</body>
+</html>

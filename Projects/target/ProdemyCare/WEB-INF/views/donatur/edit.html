@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Donatur Edit</title>
+</head>
+<body>
+	<h1>ini page donasi/edit</h1>
+	<table>
+		<tr th:each="donatur : ${dtrlist}">
+	            <td th:text="${donatur.listid}"></td>
+	            <td th:text="${donatur.nama}"></td>
+	     </tr>
+	</table>
+	
+	
+</body>
+</html>

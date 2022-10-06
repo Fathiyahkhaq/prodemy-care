@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Donatur Edit</title>
+</head>
+<body>
+	<h1>ini page donasi/edit</h1>
+
+	<h1>Form</h1>
+    <form action="#" th:action="@{/user1/edit}" th:object="${coba}" method="post">
+    	<p>Id: <input type="text" th:field="*{id}" /></p>
+        <p>Nama: <input type="text" th:field="*{nama}" /></p>
+        <p>Email: <input type="text" th:field = "*{email}"/></p>
+        <p>Phone: <input type="text" th:field = "*{phone}"/></p>
+        <p>Total Donasi: <input type="text" th:field = "*{total}"/></p>
+        <p>Anonim: <input type="text" th:field = "*{anonim}"/></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+<!-- 
+
+<table>
+		<tr th:each = "dtr: ${donatur}">
+			<td th:text = "${dtr.id}"></td>
+			<td th:text = "${dtr.nama}"></td>
+			<td th:text = "${dtr.email}"></td>
+			<td th:text = "${dtr.phone}"></td>
+			<td th:text = "${dtr.total}"></td>
+			<td th:text = "${dtr.anonim}"></td>
+		</tr>
+	</table>
+	
+	<table>
+		<tr th:each="dtr : ${donatur}">
+	            <td th:text="${dtr.id}"></td>
+	            <td th:text="${dtr.nama}"></td>
+	            <td th:text="${dtr.email}"></td>
+	     </tr>
+	</table>
+ -->
+</body>
+</html>
