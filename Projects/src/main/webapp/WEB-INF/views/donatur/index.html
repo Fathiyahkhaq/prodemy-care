@@ -7,30 +7,11 @@
 <body>
 	<h1>Ini Index</h1>
 	
-	<form action="#" th:action="@{/donasi}" th:object="@{tambah}" method="post">
-	<input type="hidden" name="mode" th:field="*{tambah}">
+	<p>Choose what you need to do</p>
 	
-	Nama <input type="text" name="nama" value=""><br>
-	Email <input type="text" name="email" value=""><br>
-	Phone <input type="text" name="phone" value=""><br>
-	Total Donasi<input type="text" name="total" value=""><br>
-	Anonim <input type="number" name="anonim" value=""><br>
-	<button type="submit">Simpan</button>
-	</form>
-	
-	
-		<table>
-			<tr th:each = "dtr: ${dtrlist}">
-				<td th:text = "${dtr.id}"></td>
-				<td th:text = "${dtr.nama}"></td>
-				<td th:text = "${dtr.email}"></td>
-				<td th:text = "${dtr.phone}"></td>
-				<td th:text = "${dtr.total}"></td>
-				<td th:text = "${dtr.anonim}"></td>
-			</tr>
-		</table>
 	<ul>
-		<li>${dtr.id} - ${dtr.nama} - <a href="${contextName}/mhs/edit?id=${dtr.id}">Edit</a></li>
+		<li><a href="http://localhost:8080/ProdemyCare/user1/donasi">List2 Donatur</a>
+		<li><a href="http://localhost:8080/ProdemyCare/user1/tambah">Be a Donatur</a>
 	</ul>
 
 	

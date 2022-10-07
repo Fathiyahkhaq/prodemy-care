@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>List Ajuan</h1>
+    <a href = "tambahAjuan">Tambah Ajuan</a>
+	<table>
+		<tr th:each = "dtr: ${list}">
+			<td th:text = "${dtr.id}"></td>
+			<td th:text = "${dtr.title}"></td>
+			<td th:text = "${dtr.target}"></td>
+			<td th:text = "${dtr.status}"></td>
+			<td th:text = "${dtr.file}"></td>
+			<td th:text = "${dtr.photo}"></td>
+			<td th:text = "${dtr.event}"></td>
+			<td th:text = "${dtr.payment}"></td>
+			<td th:text = "${dtr.deadline}"></td>
+			<td>
+	            <a th:href="@{editAjuan(id=${dtr.id})}">Edit</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -6,13 +6,17 @@
 </head>
 <body>
 	<h1>ini page donasi/edit</h1>
-	<table>
-		<tr th:each="donatur : ${dtrlist}">
-	            <td th:text="${donatur.listid}"></td>
-	            <td th:text="${donatur.nama}"></td>
-	     </tr>
-	</table>
-	
-	
+
+	<h1>Form</h1>
+    <form action="#" th:action="@{update/{id}(id=${coba.id})}" th:object="${coba}" method="post">
+    	<p><input type="text" th:field="*{id}" id = "id" name = "id"/></p>
+        <p>Nama: <input type="text" th:field="*{nama}" id = "nama" name = "nama"/></p>
+        <p>Email: <input type="text" th:field = "*{email}" id = "email" name = "email"/></p>
+        <p>Phone: <input type="text" th:field = "*{phone}" id = "phone" name = "phone"/></p>
+        <p>Total Donasi: <input type="text" th:field = "*{total}" id = "total" name = "total"/></p>
+        <p>Anonim: <input type="text" th:field = "*{anonim}" id = "anonim" name = "anonim"/></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+
 </body>
 </html>

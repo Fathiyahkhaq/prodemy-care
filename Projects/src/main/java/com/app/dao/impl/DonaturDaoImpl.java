@@ -47,7 +47,7 @@ public class DonaturDaoImpl implements DonaturDao {
 	@Override
 	public void update(ListDonatur donatur) throws Exception {
 		Session session = this.sessionFactory.getCurrentSession();
-		session.update(donatur);
+		session.saveOrUpdate(donatur);
 		logger.debug("Donatur updated -> {0}", donatur);
 	}
 

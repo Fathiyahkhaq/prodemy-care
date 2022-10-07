@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Form Ajuan</title>
+</head>
+<body>
+	<h1>Form Pengajuan Donasi</h1>
+    <form action="#" th:action="@{updateAjuan/{id}(id=${cobalagi.id})}" th:object="${cobalagi}" method="post">
+    	<p><input type="text" th:field="*{id}" id = "id" name = "id"/></p>
+        <p>Title: <input type="text" th:field="title" id = "title" name = "title"/></p>
+        <p>Target: <input type="text" th:field = "*{target}" id = "target" name = "target"/></p>
+        <p>Status: <input type="text" th:field = "*{status}" id = "status" name = "status"/></p>
+        <p>File: <input type="text" th:field = "*{file}" id = "file" name = "file"/></p>
+        <p>Photo: <input type="text" th:field = "*{photo}" id = "photo" name = "photo"/></p>
+        <p>Event: <input type="text" th:field = "*{event}" id = "event" name = "event"/></p>
+        <p>Payment Method: <input type="text" th:field = "*{payment}" id = "payment" name = "payment"/></p>
+        <p>Deadline (YYY-MM-DD):<input type="text" th:field = "*{deadline}" id = "deadline" name = "deadline"/></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>

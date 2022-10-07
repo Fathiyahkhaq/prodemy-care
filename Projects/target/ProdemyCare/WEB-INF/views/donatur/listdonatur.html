@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>List Donatur</title>
+</head>
+<body>
+
+	<h1>Ini List Donatur</h1>
+	
+	<a href = "tambahAjuan">Tambah</a>
+	<table>
+		<tr th:each = "dtr: ${list}">
+			<td th:text = "${dtr.id}"></td>
+			<td th:text = "${dtr.nama}"></td>
+			<td th:text = "${dtr.email}"></td>
+			<td th:text = "${dtr.phone}"></td>
+			<td th:text = "${dtr.total}"></td>
+			<td th:text = "${dtr.anonim}"></td>
+			<td>
+	            <a th:href="@{edit(id=${dtr.id})}">Edit</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

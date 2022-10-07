@@ -43,4 +43,12 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/org/springframework/security/spring-security-config/5.1.1.RELEASE/spring-security-config-5.1.1.RELEASE.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/springframework/security/spring-security-taglibs/5.1.1.RELEASE/spring-security-taglibs-5.1.1.RELEASE.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/springframework/security/spring-security-acl/5.1.1.RELEASE/spring-security-acl-5.1.1.RELEASE.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/thymeleaf/thymeleaf-spring5/3.1.0.M3/thymeleaf-spring5-3.1.0.M3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/thymeleaf/thymeleaf/3.1.0.M3/thymeleaf-3.1.0.M3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/nz/net/ultraq/thymeleaf/thymeleaf-layout-dialect/3.0.0/thymeleaf-layout-dialect-3.0.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/nz/net/ultraq/extensions/groovy-extensions/1.1.0/groovy-extensions-1.1.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/nz/net/ultraq/thymeleaf/thymeleaf-expression-processor/3.0.0/thymeleaf-expression-processor-3.0.0.jar" enabled="true" runInBatchMode="false"/>
 </factorypath>

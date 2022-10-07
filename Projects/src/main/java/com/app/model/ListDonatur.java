@@ -27,23 +27,23 @@ public class ListDonatur {
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="pk_donatur")
 	private Long id;
 		
-	@Column(name = "donatur_name", updatable = false, nullable = false)
+	@Column(name = "donatur_name", nullable = false)
 	private String nama;
 	
-	@Column(name = "donation_email", updatable = false, nullable = false)
+	@Column(name = "donation_email", nullable = false)
 	private String email;
 	
-	@Column(name = "donation_phone", updatable = false, nullable = false)
+	@Column(name = "donation_phone", nullable = false)
 	private String phone;
 	
-	@Column(name = "total_donation", updatable = false, nullable = false)
+	@Column(name = "total_donation", nullable = false)
 	private String total;
 	
-	@Column(name = "anonim", updatable = false, nullable = false)
+	@Column(name = "anonim", nullable = false)
 	private int anonim;
 	
 	@CreationTimestamp
-	@Column(name = "created_at", nullable = false, updatable = false)
+	@Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
 	
 	@UpdateTimestamp
